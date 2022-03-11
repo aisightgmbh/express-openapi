@@ -1,8 +1,10 @@
-# Express OpenAPI
+# @aisightgmbh/express-openapi
 
-[![NPM Version](https://badgen.net/npm/v/@wesleytodd/openapi)](https://npmjs.org/package/@wesleytodd/openapi)
-[![NPM Downloads](https://badgen.net/npm/dm/@wesleytodd/openapi)](https://npmjs.org/package/@wesleytodd/openapi)
-[![js-standard-style](https://badgen.net/badge/style/standard/green)](https://github.com/standard/standard)
+## **WARNING**
+
+**This is a fork of [wesleytodd/express-openapi](https://github.com/wesleytodd/express-openapi) for a temporary use. Once the [pull request #29](https://github.com/wesleytodd/express-openapi/pull/29) is closed, we can switch back to the original source. The pull request source can be found in the branch [fix/pr-1](https://github.com/aisightgmbh/express-openapi/tree/fix/pr-1).**
+
+---
 
 A middleware for generating and validating OpenAPI documentation from an Express app.
 
@@ -13,12 +15,12 @@ served by the main middleware (along with component specific documents).
 
 ## Note on package name
 
-This package documents itself as `@express/openapi`. This is because we (the Express TC) have been discussing
+~~This package documents itself as `@aisightgmbh/express-openapi`. This is because we (the Express TC) have been discussing
 adopting the npm scope for publishing "core maintained" middleware modules.  This is one such middleware.
 While we are working out the details of this I am publishing this module under my personal scope.  When
-that is resolved we will move it over to the main scope and I will deprecate this module.
+that is resolved we will move it over to the main scope and I will deprecate this module.~~
 
-Install & usage step for now: `$ npm i @wesleytodd/openapi` & `const openapi = require('@wesleytodd/openapi')`
+~~Install & usage step for now: `$ npm i @@aisightgmbh/express-openapi` & `const openapi = require('@@aisightgmbh/express-openapi')`~~
 
 ## Philosophy
 
@@ -31,14 +33,16 @@ both write great code, as well as have great documentation!
 
 ## Installation
 
+The installation requires access to our private registry and is not available for the public.
+
 ```
-$ npm install --save @express/openapi
+$ npm install --save @aisightgmbh/express-openapi
 ```
 
 ## Usage
 
 ```javascript
-const openapi = require('@express/openapi')
+const openapi = require('@aisightgmbh/express-openapi')
 const app = require('express')()
 
 const oapi = openapi({

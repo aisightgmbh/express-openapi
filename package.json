@@ -1,6 +1,6 @@
 {
-  "name": "@express/openapi",
-  "version": "0.0.0",
+  "name": "@aisightgmbh/express-openapi",
+  "version": "0.1.1",
   "description": "Middleware for generating OpenAPI/Swagger documentation for your Express app",
   "author": "Wes Todd <wes@wesleytodd.com>",
   "keywords": [
@@ -11,10 +11,6 @@
   ],
   "license": "ISC",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "wesleytodd/express-openapi"
-  },
   "scripts": {
     "test": "standard && mocha",
     "prepublishOnly": "npm t",
